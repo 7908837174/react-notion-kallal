@@ -20,6 +20,10 @@ export interface NotionRendererProps {
   level?: number;
   customBlockComponents?: CustomBlockComponents;
   customDecoratorComponents?: CustomDecoratorComponents;
+
+  // Error handling options
+  showUnsupportedBlockErrors?: boolean;
+  onUnsupportedBlock?: (blockType: string, blockId?: string) => void;
 }
 
 export const NotionRenderer: React.FC<NotionRendererProps> = ({

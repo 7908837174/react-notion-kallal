@@ -681,3 +681,90 @@ img.notion-nav-icon {
   margin: 0 2px;
   color: rgba(55, 53, 47, 0.4);
 }
+
+/* Unsupported Block Error Styles */
+.notion-unsupported-block {
+  margin: 8px 0;
+  padding: 16px;
+  background-color: rgb(255, 245, 245);
+  border: 1px solid rgb(254, 226, 226);
+  border-radius: 6px;
+  color: rgb(55, 53, 47);
+  font-family: inherit;
+}
+
+.notion-unsupported-block-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.notion-unsupported-block-icon {
+  font-size: 20px;
+  line-height: 1;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.notion-unsupported-block-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.notion-unsupported-block-title {
+  font-weight: 600;
+  font-size: 14px;
+  color: rgb(185, 28, 28);
+  margin-bottom: 4px;
+}
+
+.notion-unsupported-block-message {
+  font-size: 14px;
+  line-height: 1.4;
+  color: rgb(55, 53, 47);
+  margin-bottom: 8px;
+}
+
+.notion-unsupported-block-suggestion {
+  font-size: 13px;
+  line-height: 1.4;
+  color: rgb(107, 114, 126);
+  font-style: italic;
+  margin-bottom: 6px;
+}
+
+.notion-unsupported-block-id {
+  font-size: 11px;
+  color: rgb(156, 163, 175);
+  font-family: monospace;
+  background-color: rgb(249, 250, 251);
+  padding: 2px 6px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .notion-unsupported-block {
+    background-color: rgb(44, 37, 37);
+    border-color: rgb(69, 26, 26);
+    color: rgb(229, 231, 235);
+  }
+  
+  .notion-unsupported-block-title {
+    color: rgb(248, 113, 113);
+  }
+  
+  .notion-unsupported-block-message {
+    color: rgb(229, 231, 235);
+  }
+  
+  .notion-unsupported-block-suggestion {
+    color: rgb(156, 163, 175);
+  }
+  
+  .notion-unsupported-block-id {
+    color: rgb(107, 114, 126);
+    background-color: rgb(31, 41, 55);
+  }
+}
